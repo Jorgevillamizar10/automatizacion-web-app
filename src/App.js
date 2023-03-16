@@ -1,11 +1,11 @@
-import './App.css';
+import { Dashboard } from './components/dashboard';
+import { Members } from './components/members';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <div>
+      <Dashboard />
+      <Members />
     </div>
   );
 }
