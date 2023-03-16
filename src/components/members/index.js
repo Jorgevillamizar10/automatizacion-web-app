@@ -3,12 +3,11 @@ import { memberData } from './data'
 export const Members = () => {
   return (
     <section
-      id='members'
       className='w-full h-auto bg-[#333] flex flex-col items-center justify-center border-b-4 border-[#73c3ce]'
     >
       <div className='container my-12'>
         <h2 className='text-white font-bold text-3xl pl-8 lg:pl-1 mb-5'>
-          Members
+          Estudiantes
         </h2>
         <div className='w-full flex items-center justify-around flex-wrap'>
           {memberData.map((member, index) => (
