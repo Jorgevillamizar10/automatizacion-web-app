@@ -1,22 +1,5 @@
-import { useEffect } from "react";
-import { getDatabase, ref, onValue} from "firebase/database";
 
 export const Dashboard = () => {
-
-  const getDashboardData = () => {
-    const db = getDatabase();
-    const starCountRef = ref(db, 'posts/' + postId + '/starCount');
-    onValue(starCountRef, (snapshot) => {
-      const data = snapshot.val();
-      updateStarCount(postElement, data);
-    });
-  }
-
-  useEffect(() => {
-    getDashboardData()
-  }, []);
-
-
 
   return (
     <section
